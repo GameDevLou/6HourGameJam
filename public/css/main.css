@@ -216,9 +216,18 @@ body {
   .col6-9 {
     width: 100%; } }
 
-.col1-4,
-.col2-8 {
-  width: 25%; }
+@media (min-width: 1025px) {
+  .col1-4,
+  .col2-8 {
+    width: 25%; } }
+@media (min-width: 731px) and (max-width: 1024px) {
+  .col1-4,
+  .col2-8 {
+    width: 50%; } }
+@media (min-width: 320px) and (max-width: 730px) {
+  .col1-4,
+  .col2-8 {
+    width: 100%; } }
 
 .col3-4 {
   width: 75%; }
