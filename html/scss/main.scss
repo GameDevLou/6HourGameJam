@@ -26,18 +26,43 @@ body {
   background: $background;
 }
 
+header .col1-2 {
+  @include breakpoint(papa-bear) {
+    text-align: left;
+  }
+
+  @include breakpoint(mama-bear) {
+    text-align: center;
+  }
+
+  @include breakpoint(baby-bear) {
+    text-align: center;
+  }
+}
+
 h1 {
   font-family: "lcd";
 }
 
 .page {
+  @include breakpoint(papa-bear) {
+    width: 80%;
+  }
+
+  @include breakpoint(mama-bear) {
+    width: 95%;
+  }
+
+  @include breakpoint(baby-bear) {
+    min-width: 370px;
+    max-width: 100%;
+  }
+
   position: relative;
   background: $main;
   border: 10px solid lighten($main, 5%);
   color: white;
   margin: 50px auto;
-  padding: 25px;
-  width: 80%;
 }
 
 a {
@@ -77,4 +102,19 @@ nav {
 footer {
   margin-top: 50px;
   text-align: center;
+}
+
+@include breakpoint(papa-bear) {
+  width: 80%;
+}
+
+
+@include breakpoint(mama-bear) {
+  width: 95%;
+}
+
+
+@include breakpoint(baby-bear) {
+  min-width: 370px;
+  max-width: 100%;
 }
