@@ -1,0 +1,70 @@
+<h1> {{{title}}} </h1>
+<h4> {{{slogan}}} </h4>
+
+<form>
+	<p>We won't host your game, you must provide a link to where your game can be played or downloaded and maintain it.</p>
+	<p>* required </p>
+	<p>Title*</p>
+	<input type="text" data-field="title"/>
+	<p>Theme</p>
+	{{currentTheme}}
+	<p>Screenshots *</p>
+	<p class="sub">(5max)</p>
+	<div class="screenshotUploader">
+		<div class="screenshotSpot">
+			+
+		</div>
+		<div class="screenshotSpot">
+			+
+		</div>
+		<div class="screenshotSpot">
+			+
+		</div>
+		<div class="screenshotSpot">
+			+
+		</div>
+		<div class="screenshotSpot">
+			+
+		</div>
+	</div>
+	<p>Name*</p>
+	<input type="text" data-field="name"/>
+	<p>Studio/team affiliation</p>
+	<input type="text" data-field="studio"/>
+	<p>Game dev community affiliation</p>
+	<input type="text" data-field="community"/>
+	<p>Description*</p>
+	<p class="sub">(include how to play if it will help)</p>
+	<textarea name="address"cols="30" rows="4" data-field="description"></textarea>
+	<p>Link to game*</p>
+	<input type="text" data-field="link"/>
+	<p>Platform(s)*</p>
+	<table>
+		<tr>
+			<td><input data-platform="web" type="checkbox"/></td>
+			<td><span>Web</span></td>
+			<td><input data-platform="mac" type="checkbox"/></td>
+			<td><span>Mac</span></td>
+		</tr>
+		<tr>
+			<td><input data-platform="linux" type="checkbox"/></td>
+			<td><span>Linux</span></td>
+			<td><input data-platform="win" type="checkbox"/></td>
+			<td><span>Win</span></td>
+		</tr>
+		<tr>
+			<td><input data-platform="ios" type="checkbox"/></td>
+			<td><span>iOS</span></td>
+			<td><input data-platform="android" type="checkbox"/></td>
+			<td><span>Android</span></td>
+		</tr>
+		<tr>
+			<td><input data-platform="tabletop" type="checkbox"/></td>
+			<td><span>Tabletop</span></td>
+			<td><input data-platform="other" type="checkbox"/></td>
+			<td><span>other</span></td>
+		</tr>
+	</table>
+
+	<input type="submit"/>
+</form>

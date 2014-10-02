@@ -20,6 +20,8 @@ github.com/alexbezuska
 //My own oppinionated defaults (optional)
 @import "typography";
 
+@import "forms";
+
 @import "jquery.countdown";
 
 body {
@@ -42,27 +44,31 @@ header .col1-2 {
 
 h1 {
   font-family: "lcd";
+  font-size: 2rem;
+  line-height: 2.4rem;
 }
 
 .page {
   @include breakpoint(papa-bear) {
     width: 80%;
+    margin: 50px auto;
   }
 
   @include breakpoint(mama-bear) {
     width: 95%;
+    margin: 50px auto;
   }
 
   @include breakpoint(baby-bear) {
     min-width: 370px;
     max-width: 100%;
+    margin: 0 auto;
   }
 
   position: relative;
   background: $main;
   border: 10px solid lighten($main, 5%);
   color: white;
-  margin: 50px auto;
 }
 
 a {
@@ -100,7 +106,7 @@ nav {
 }
 
 footer {
-  margin-top: 50px;
+  margin-top: 100px;
   text-align: center;
 }
 

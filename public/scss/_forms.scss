@@ -1,0 +1,146 @@
+form {
+  margin: 0 auto 100px auto;
+  position: relative;
+  @include breakpoint(papa-bear) {
+    width: 52%;
+  }
+
+  @include breakpoint(mama-bear) {
+    width: 84%;
+  }
+
+  @include breakpoint(baby-bear) {
+    width: 100%;
+  }
+
+  p {
+    margin: 15px auto 4px auto;
+  }
+  p.sub {
+    margin: -4px auto 4px auto;
+    font-size: 13px;
+  }
+  table {
+    span {
+      padding: 0 15px 0 4px;
+    }
+  }
+}
+
+input[type="text"] {
+  outline: none !important;
+  border: none;
+  height: 32px;
+  font-size: 18px;
+  padding: 5px;
+  width: 98%;
+}
+
+textarea {
+  outline: none !important;
+  border: none;
+  height: 32px;
+  font-size: 18px;
+  padding: 5px;
+  height: 200px;
+  width: 98%;
+}
+
+.screenshotUploader {}
+
+.screenshotSpot {
+  margin: 4px;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background: white;
+  color: $main;
+  text-align: center;
+  padding-top: 30px;
+  font-size: 80px;
+  &:hover {
+    cursor: pointer;
+    opacity: .9;
+  }
+}
+
+input[type='checkbox'] {
+  outline: none !important;
+  display: block;
+  margin: 10px auto;
+  -webkit-appearance: button;
+  border: none;
+  background-color: #ccc;
+  width: 70px;
+  height: 35px;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  position: relative;
+  transition: background-color 1s;
+}
+
+input[type='checkbox'].error {
+  background-color: #c63d3d;
+}
+
+input[type='checkbox']:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 45%;
+  height: 80%;
+  background-color: #fdfdfd;
+  margin: 4%;
+  border-radius: 3px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  background: rgb(255, 255, 255);
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(243, 243, 243, 1) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(100%, rgba(243, 243, 243, 1)));
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(243, 243, 243, 1) 100%);
+  background: -o-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(243, 243, 243, 1) 100%);
+  background: -ms-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(243, 243, 243, 1) 100%);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(243, 243, 243, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f3f3f3',GradientType=0 );
+  transition: .5s all;
+}
+
+input[type='checkbox']:checked {
+  background-color: darken($main, 5%);
+}
+
+input[type='checkbox']:checked:after {
+  left: 45%;
+}
+
+input[type="submit"] {
+  outline: none !important;
+  float: right;
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 18px;
+  color: white;
+  background: lighten($main, 10%);
+  font-weight: normal;
+  line-height: 1.428571429;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  &:hover {
+    background: lighten($main, 15%);
+  }
+  &:active {
+    background: darken($main, 5%);
+  }
+}
