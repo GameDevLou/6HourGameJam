@@ -359,6 +359,9 @@ a {
 
 .sponsors {
   text-align: center; }
+  .sponsors img {
+    max-width: 160px;
+    max-height: 120px; }
 
 nav ul {
   text-align: center; }
