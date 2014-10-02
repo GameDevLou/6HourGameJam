@@ -1,1 +1,1 @@
-rsync -avzP ./html glasses:/ivy/6hourgamejam/
+rsync -avzP ./html/ glasses:/ivy/6hourgamejam/

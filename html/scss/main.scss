@@ -12,22 +12,65 @@ github.com/alexbezuska
 */
 
 // Main row/column system and  basic mediaQuery setup
-  @import"structure";
+@import "structure";
+
 // Starter color kit (optional)
-  @import"colors";
+@import "colors";
+
 //My own oppinionated defaults (optional)
-  @import"typography";
+@import "typography";
 
+@import "jquery.countdown";
 
+body {
+  background: $background;
+}
 
+h1 {
+  font-family: "lcd";
+}
 
+.page {
+  position: relative;
+  background: $main;
+  border: 10px solid lighten($main, 5%);
+  color: white;
+  margin: 50px auto;
+  padding: 25px;
+  width: 80%;
+}
 
+a {
+  color: white;
+}
 
+.sponsors {
+  text-align: center;
+}
 
+nav {
+  ul {
+    text-align: center;
+    li {
+      list-style-type: none;
+      display: inline-block;
+      padding: 10px 25px;
+      margin: 0 15px;
+      background: darken($main, 5%);
+      a {
+        text-decoration: none;
+      }
+      &:hover {
+        background: lighten($main, 5%);
+      }
+      &:active {
+        background: darken($main, 10%);
+      }
+    }
+  }
+}
 
-
-
-
-
-
-
+footer {
+  margin-top: 50px;
+  text-align: center;
+}
