@@ -1,0 +1,1 @@
+rsync -avzP ./html glasses:/ivy/6hourgamejam/
